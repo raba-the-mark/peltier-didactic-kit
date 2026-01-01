@@ -6,6 +6,8 @@ In this repository I present a device kit that can be used for control education
 
 This project is released under the  
 **Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International License (CC BY-NC-SA 4.0)**.
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
 
 Use of this project is permitted exclusively for educational, study, and research purposes.  
 Any commercial use is strictly prohibited without explicit authorization from the author.
