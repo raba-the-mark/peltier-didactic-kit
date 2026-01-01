@@ -1,4 +1,4 @@
-# peltier-didactic-kit
+# peltier-educational-kit
 This repository presents an educational device kit for control education. The kit is composed of simple and low-cost components, making it easy to replicate. It allows students to implement and experimentally validate control algorithms.
 
 The main idea of the device is to provide a small-scale thermal control system consisting of temperature sensors, a Peltier cell as the actuator, and interface circuits. 
