@@ -15,10 +15,21 @@ The computer hosts the controller implemented in MATLAB/Simulink. Communication 
 
 
 
-The Peltier cell is housed in a 3D-printed case. Inside the case, in addition to the cell, there are two fans, a power resistor, and two temperature sensors (one digital and one analog). One of the two fans, aided by a heat sink, is used to keep the uncontrolled side of the cell cool. This fan is always on. The other fan can be conveniently used to apply a load disturbance on the controlled side of the cell. The power resistor introduces another source of disturbance on the load but it creates the opposite effect (the fan removes heat, while the resistor generates heat). To improve heat conduction between the cell, the sensors, and the resistor, a thin metal plate has been inserted. The digital temperature sensor used is the DS18B20, a digital sensor that communicates via the 1-Wire protocol. It offers high accuracy, with maximum resolution 0.0625°C. This sensor has virtually no measurement noise. In order to have some measurement noise and therefore to test the capability of a controller to handle this issue, we have introduced another analog temperature sensor, namely, the LM35sensor, by intentionally omitting the filter capacitor. This allows the user to decide which sensor to use, with noise or without noise, so that he/she can face the problem of measurement noise in designing the control strategy, dealing with a typical issue in industrial environments.
+The Peltier cell is housed in a 3D-printed case. Inside the case, in addition to the cell, there are two fans, a power resistor, and two temperature sensors (one digital and one analog). One of the two fans, aided by a heat sink, is used to keep the uncontrolled side of the cell cool. This fan is always on. The other fan can be conveniently used to apply a load disturbance on the controlled side of the cell. The power resistor introduces another source of disturbance on the load but it creates the opposite effect (the fan removes heat, while the resistor generates heat). To improve heat conduction between the cell, the sensors, and the resistor, a thin metal plate has been inserted. The digital temperature sensor used is the DS18B20, a digital sensor that communicates via the 1-Wire protocol. It offers high accuracy, with maximum resolution 0.0625°C. This sensor has virtually no measurement noise. In order to have some measurement noise and therefore to test the capability of a controller to handle this issue, we have introduced another analog temperature sensor, namely, the LM35 sensor, by intentionally omitting the filter capacitor. This allows the user to decide which sensor to use, with noise or without noise, so that he/she can face the problem of measurement noise in designing the control strategy, dealing with a typical issue in industrial environments.
 
 The image below shows the exploded 3D assembly in which all the components can be seen:
 <img src="images/3D exploded.jpg" alt="3D exploded" width="500">
+
+<ol>
+  <li> Support </li>
+  <li> Fan </li>
+  <li> Power resistor </li>
+  <li> Peltier cell </li>
+  <li> Internal support </li>
+  <li> Temperature sensors </li>
+  <li> Heat-sink </li>
+  <li> Housing </li>
+</ol>
 
 
 
