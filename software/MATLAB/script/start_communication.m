@@ -1,30 +1,32 @@
+
+
 clear all
 close all
 clc
 
-% questo script apre la comunicazione seriale. Serve per interagire
-% manualmente con la cella, oppure per lavorare con schemi Simulink
+% This script opens the serial communication. It is used to manually interact with the cell, or to work with Simulink models.
 
-% NB per chiudere la cominicazione seriale è necessario eleminare
-% l'elemento "btGL" dal workspace
+% NOTE: To close the serial communication, it is necessary to delete
+% the "btGL" element from the workspace.
 
 
 pause(1)
 global btGL;
-btGL = serialport("COM18",115200)   % apro la comunicazione seriale
+btGL = serialport("COM18",115200)   % opens the communication
 
 
 pause(3)
 
-writeread(btGL,"%M")   % Abilito la modalità interfaccia
+writeread(btGL,"%M")   % Enable interface mode (see User Manual)
 
 pause(1)
 
-% lettura sensori per prova
+% Sensor reading for testing
 digitalTemp = readTemp(1)
 analogTemp = readTemp(2)
 
 display("Connection ready")
+
 
 
 
